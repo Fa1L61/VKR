@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{332CFAC4-6F75-4264-8BD5-BA30FD55D345}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Diplom2._0</RootNamespace>
+    <AssemblyName>Diplom2.0</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CezarDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CezarDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormZakupki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormZakupki.Designer.cs">
+      <DependentUpon>FormZakupki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKompred.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKompred.Designer.cs">
+      <DependentUpon>FormKompred.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCheta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheta.Designer.cs">
+      <DependentUpon>FormCheta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNewZakupki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNewZakupki.Designer.cs">
+      <DependentUpon>FormNewZakupki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOplata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOplata.Designer.cs">
+      <DependentUpon>FormOplata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAkts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAkts.Designer.cs">
+      <DependentUpon>FormAkts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEstimate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEstimate.Designer.cs">
+      <DependentUpon>FormEstimate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContacts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContacts.Designer.cs">
+      <DependentUpon>FormContacts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCustomers.Designer.cs">
+      <DependentUpon>FormCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNewOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNewOrder.Designer.cs">
+      <DependentUpon>FormNewOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNewSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNewSupplier.Designer.cs">
+      <DependentUpon>FormNewSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNewContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNewContact.Designer.cs">
+      <DependentUpon>FormNewContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSuppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSuppliers.Designer.cs">
+      <DependentUpon>FormSuppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormZakupki.resx">
+      <DependentUpon>FormZakupki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKompred.resx">
+      <DependentUpon>FormKompred.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCheta.resx">
+      <DependentUpon>FormCheta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNewZakupki.resx">
+      <DependentUpon>FormNewZakupki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOplata.resx">
+      <DependentUpon>FormOplata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAkts.resx">
+      <DependentUpon>FormAkts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEstimate.resx">
+      <DependentUpon>FormEstimate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContacts.resx">
+      <DependentUpon>FormContacts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCustomers.resx">
+      <DependentUpon>FormCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNewOrder.resx">
+      <DependentUpon>FormNewOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNewSupplier.resx">
+      <DependentUpon>FormNewSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNewContact.resx">
+      <DependentUpon>FormNewContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSuppliers.resx">
+      <DependentUpon>FormSuppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="CezarDBDataSet.xsc">
+      <DependentUpon>CezarDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CezarDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CezarDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CezarDBDataSet.xss">
+      <DependentUpon>CezarDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
